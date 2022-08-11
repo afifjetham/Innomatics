@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regex Clone</title>
+
+        <style>
+            body {
+                background-image: url('https://www.mundojs.com.br/wp-content/uploads/2018/06/regex.jpeg');
+                background-attachment: fixed;
+                background-position: center;
+            }
+            
+            #wrap {
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                margin-top: -200px;
+                margin-left: -250px;
+                border: 8px solid rgb(0, 0, 0);
+                background: rgb(207, 194, 99);
+                width: 500px;
+                height: 400px;
+                text-align:center;
+            }
+            button{
+                color: rgb(255, 255, 255);
+                background: rgb(0, 0, 0);
+                font-style:italic;
+                font-size:medium;
+            }
+            h1{
+                font-style: italic;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="wrap" >
+
+            <h1>Welcome to Regix 101 Clone.</h1>
+
+            <form action='' method="post">
+                <label>Regular Expression: </label>
+                <input type="text" name="in_re" placeholder="Enter Regex Pattern here"> <br><br>
+                <label>Test String: </label>
+                <input type="text" name="in_str" placeholder="Enter your Test String here"> <br><br>
+                <button>SUBMIT</button>
+            </form>
+
+            {% if b %}
+            <h3>Match Found!</h3>
+            <h4>Regix Pattern Entered: {{ c }} <br><br>
+                Text String Entered: {{ n }} <br><br>
+                Total Matches Found: {{ a }} <br><br>
+                Matched: {{ b }}
+            </h4>            
+            {% else %}
+                <h3>No Match Found!</h3>
+                <h4>Regix Pattern Entered: {{ c }} <br><br>
+                    Text String Entered: {{ n }}
+                </h4>
+            {% endif %}
+
+        </div>    
+    </body>
+</html>

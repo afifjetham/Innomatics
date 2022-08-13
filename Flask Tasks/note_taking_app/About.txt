@@ -1,0 +1,2 @@
+> We have a note taking application with only one route (i.e. Home Route). This Application is broken.
+> We need to refactor the code and try to make sure that the application works properly.

@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    History Page
+{% endblock %}
+
+{% block content %}
+    <h1><i>Welcome to History Page.</i></h1>
+
+    <style>
+        nav{
+            margin-left: -330px;
+        }
+        h1{
+            margin-left: -330px;
+        }
+        table, th, td {
+           border: 1px solid black;
+           width:1500px;
+           height:40px;
+           margin-left: -330px;
+        }    
+    </style>
+    
+     
+    <table style="background-color:#ffffff; text-align:center;">
+    
+        <tr>
+            <th>ID</th>
+            <th>Original URL</th>
+            <th>Shorter URL</th>
+        </tr>
+    
+        <tbody id="forbar">
+    
+       {% for link in all %}
+        <tr>
+            <td>{{link.id}}</td>
+            <td>{{link.long}}</td>
+            <td>{{link.short}}</td>
+        </tr>
+        {% endfor %}
+
+{% endblock %}

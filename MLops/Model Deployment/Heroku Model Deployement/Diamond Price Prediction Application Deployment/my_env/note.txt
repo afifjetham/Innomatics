@@ -1,0 +1,2 @@
+Virtual Environment file can't be uploaded because of the large file size and having above 100 dependencies files.
+It will automatically get generated after following the cmd virtual environment creating steps given in the Heroku_Deployment_PPT file.
